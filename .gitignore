@@ -50,8 +50,8 @@
 /web/update.php
 /web/web.config
 core/
-sites/default/files
-themes/cirrocumulus/gulp-boilerplate/node_modules
+themes/cirrocumulus/gulp-boilerplate/node_modules/
+sites/default/
 
 # Ignore vendor dependencies and scripts
 /vendor
