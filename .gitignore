@@ -51,6 +51,7 @@
 /web/web.config
 core/
 sites/default/files
+themes/cirrocumulus/gulp-boilerplate/node_modules
 
 # Ignore vendor dependencies and scripts
 /vendor
