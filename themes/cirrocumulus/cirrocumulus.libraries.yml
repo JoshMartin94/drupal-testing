@@ -1,0 +1,11 @@
+global-css :
+  css:
+    theme:
+      gulp-boilerplate/dist/css/main.css: {}
+
+global-js :
+  js:
+    gulp-boilerplate/dist/js/main.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal.dialog.ajax

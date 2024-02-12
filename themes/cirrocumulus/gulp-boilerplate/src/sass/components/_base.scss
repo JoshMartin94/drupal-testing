@@ -1,0 +1,33 @@
+/* ---------------------------- Site information ------------------------------ */
+/* -------------------- Initial site build March of 2023 --------------------- */
+/* ------------ Developer: Josh Martin (JM) & Vince Nisly (VEN) -------------- */
+/* --------------------- Remember this is mobile first! ---------------------- */
+/* ------------- A website built by Craft & Cloud Marketing Co. -------------- */
+
+@import "node_modules/breakpoint-sass/stylesheets/breakpoint.scss";
+/*@import "node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";*/
+// un comment the line above this if you want to use the custom hamburgurs
+
+/* ------------------------- VARIABLES ------------------------- */
+
+$mobile: 450px;
+$small: 600px;
+$tab: 750px;
+$minidesk: 900px;
+$desk: 1150px;
+$desklarge: 1235px;
+$wide: 1500px;
+$extra-wide: 1700px;
+$ultra-wide: 2000px;
+
+/* ------ Color variables ----- */
+
+$egg: #FCEBDA;
+$hover: #d19a62;
+$red: #6F1519;	
+
+/* ------ Font variables ----- */
+$lilita: lilita one, cursive;
+$freight: freight-sans-pro, sans-serif;
+
+/* -------------------- GENERAL STYLES ---------------------- */

@@ -1,0 +1,17 @@
+name: Cirrocumulus
+description: 'Cirrocumulus - A custom theme by Craft and Cloud Marketing Co.'
+type: theme
+package: Core
+version: VERSION
+base theme: false
+core_version_requirement: ^10
+
+libraries:
+  - cirrocumulus/global-css
+  - cirrocumulus/global-js
+
+regions:
+  header: 'Header'
+  highlighted: 'Highlighted'
+  content: 'Main Content'
+  footer: 'Footer'

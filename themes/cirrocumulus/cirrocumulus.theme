@@ -1,0 +1,21 @@
+<?php
+use Drupal\Component\Utility\Html;
+
+/**
+ * Preprocess variables for html templates.
+ * @param $variables
+ */
+function cirrocumulus_preprocess_html(&$variables) {
+  $variables['path_info']['args'] = FALSE;
+  $variables['first_path'] = FALSE;
+  $variables['second_path_segment'] = FALSE;
+  $path = \Drupal::request()->getPathInfo();
+  $path_args = explode('/', $path);
+  if (count($path_args) >= 2) {
+    $variables['path_info']['args'] = Html::cleanCssIdentifier(ltrim($path, '/'));
+    $variables['first_path'] = next($path_args);
+    $variables['second_path_segment'] = next($path_args);
+  }
+}
+
+?>

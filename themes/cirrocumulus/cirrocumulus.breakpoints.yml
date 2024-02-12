@@ -1,0 +1,30 @@
+cirrocumulus.zero:
+   label: zero
+   mediaQuery: 'all and (min-width: 0px)'
+   weight: 0
+   multiplers:
+   - 1x
+cirrocumulus.mobile:
+   label: mobile
+   mediaQuery: 'all and (min-width: 320px)'
+   weight: 0
+   multiplers:
+   - 1x
+cirrocumulus.tab:
+   label: tab
+   mediaQuery: 'all and (min-width: 750px)'
+   weight: 1
+   multiplers:
+   - 1x
+cirrocumulus.menubreak:
+   label: MenuBreak
+   mediaQuery: 'all and (min-width: 775px)'
+   weight: 2
+   multiplers:
+   - 1x
+cirrocumulus.desk:
+   label: desk
+   mediaQuery: 'all and (min-width: 2000px)'
+   weight: 3
+   multiplers:
+   - 1x
