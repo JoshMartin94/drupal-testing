@@ -52,6 +52,7 @@
 core/
 themes/cirrocumulus/gulp-boilerplate/node_modules/
 sites/default/
+sites/default/files/
 
 # Ignore vendor dependencies and scripts
 /vendor
