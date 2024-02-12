@@ -50,6 +50,7 @@
 /web/update.php
 /web/web.config
 core/
+sites/default/files
 
 # Ignore vendor dependencies and scripts
 /vendor
