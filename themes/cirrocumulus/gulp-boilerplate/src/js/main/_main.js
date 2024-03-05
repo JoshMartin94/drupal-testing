@@ -3,7 +3,7 @@
 (function ($, Drupal) {
 
   'use strict';
-  
+
   var $hamburger = $(".hamburger");
   $hamburger.on("click", function(e) {
     $hamburger.toggleClass("is-active");
@@ -11,3 +11,5 @@
   });
 
 })(jQuery, Drupal);
+
+console.log("Hello World")
