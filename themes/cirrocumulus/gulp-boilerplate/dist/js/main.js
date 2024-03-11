@@ -4,7 +4,7 @@
 (function ($, Drupal) {
 
   'use strict';
-  
+
   var $hamburger = $(".hamburger");
   $hamburger.on("click", (function(e) {
     $hamburger.toggleClass("is-active");
@@ -12,3 +12,22 @@
   }));
 
 })(jQuery, Drupal);
+
+const increaseButton = document.querySelector('.increase-button');
+const decreaseButton = document.querySelector('.decrease-button');
+const score = document.querySelector('.score');
+
+let scoreCount = 0;
+
+function increment() {
+  scoreCount += 5;
+  document.querySelector('.score').innerHTML = scoreCount;
+}
+
+function decrement() {
+  scoreCount--;
+  document.querySelector('.score').innerHTML = scoreCount;
+}
+
+increaseButton.addEventListener('click', increment);
+decreaseButton.addEventListener('click', decrement);

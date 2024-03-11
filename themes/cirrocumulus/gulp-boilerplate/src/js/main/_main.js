@@ -11,5 +11,3 @@
   });
 
 })(jQuery, Drupal);
-
-console.log("Hello World")

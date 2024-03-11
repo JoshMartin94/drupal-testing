@@ -1,16 +1,24 @@
 body  {
   margin: 0;
+  background-color: black;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 img {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 100% !important;
+  height: auto !important;
 }
 
 header {
-  background-color: black;
+  background-color: transparent;
   padding: .3em 0;
+}
+
+.path-frontpage header {
   position: absolute;
   z-index: 3;
   left: 0;
@@ -18,12 +26,46 @@ header {
 }
 
 header nav {
-  display: none;
+  display: flex;
+  justify-content: center;
+}
+
+header ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  list-style: none;
+}
+
+header a {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+header a:before {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  opacity: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width .5s;
+}
+
+header a:hover:before {
+  opacity: 1;
+  width: 100%;
 }
 
 #block-cirrocumulus-site-branding {
-  width: 6em;
-  margin: auto;
+  width: 4em;
+  margin: .5em auto;
 }
 
 .container-hero {
@@ -33,12 +75,21 @@ header nav {
   overflow: hidden;
 }
 
+.container-hero:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgb(0 0 0 / 5%) 60%, rgb(0 0 0 / 10%) 65%, rgb(0 0 0 / 50%) 80%, rgba(0, 0, 0, 1) 100%);
+}
+
 .container-hero img {
   height: 100%;
   object-fit: cover;
   position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .hero-content {
@@ -47,4 +98,53 @@ header nav {
   top: 80%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.container-score-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 15em;
+  margin: auto;
+}
+
+.score-button {
+  background-color: #ffa156;
+  width: 6em;
+  margin: 2em auto;
+  padding: 0.5em 0;
+  border-radius: 0.2em;
+  border: solid;
+  font-size: 1.2em;
+  transition: .2s;
+}
+
+.score-button:hover {
+  cursor: pointer;
+  background-color: #e5b58e
+}
+
+.score-box {
+  border: solid #e5b58e 2px;
+  width: 3rem;
+  height: 3rem;
+}
+
+.score {
+  text-align: center;
+}
+/* SUBJECT TAB GUTENBERG SECTION */
+.wp-block-gallery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.is-layout-flex {
+  display: flex;
+  justify-content: space-between;
+}
+/* LAYOUT BUILDER SECTION */
+.entity-view-display-layout-builder-form {
+  position: relative;
+  z-index: 12;
 }

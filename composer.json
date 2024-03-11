@@ -21,7 +21,10 @@
         "drupal/core-project-message": "^10.2",
         "drupal/core-recommended": "^10.2",
         "drupal/core-vendor-hardening": "^10.2",
-        "drupal/field_formatter_class": "^1.6"
+        "drupal/field_formatter_class": "^1.6",
+        "drupal/gutenberg": "^3.0@beta",
+        "drupal/layout_builder_browser": "^1.6",
+        "drupal/layout_builder_modal": "^1.2"
     },
     "conflict": {
         "drupal/drupal": "*"
